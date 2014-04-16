@@ -1,0 +1,218 @@
+﻿[
+  {
+    "Card Name":"Goblin Peon",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":1,
+    "Armor":"1",
+    "Attacks":"1@1",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Goblin Warrior",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":2,
+    "Armor":"1",
+    "Attacks":"3@1 1@2",
+    "Card Text":"Goblin Warrior cannot block"
+  },
+  {
+    "Card Name":"Goblin Archer",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":2,
+    "Armor":"1",
+    "Attacks":"1@2 0@3",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Hobgoblin Strategist",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":4,
+    "Armor":"1",
+    "Attacks":"1@1",
+    "Card Text":"Any Phase Reaction: Sacrifice a goblinoid unit. Your opponent gains points equal to its Cache Cost. Destroy target unit."
+  },
+  {
+    "Card Name":"Orc Tribe Leader",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":6,
+    "Armor":"3",
+    "Attacks":"2@1 1@2",
+    "Card Text":"Goblinoid units on the field have +1 to all attacks"
+  },
+  {
+    "Card Name":"Orc Ravager",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":5,
+    "Armor":"5",
+    "Attacks":"3@1",
+    "Card Text":"Build Phase: Sacrafice all other Goblinoids in this row. If you sacafice at least 1 unit this way, destroy the terrain card in this row."
+  },
+  {
+    "Card Name":"Flaming Goblin",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":2,
+    "Armor":"2",
+    "Attacks":"3@1",
+    "Card Text":"When Flaming Goblin attacks or blocks, your opponent gains 1 point"
+  },
+  {
+    "Card Name":"Goblin Worker",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":1,
+    "Armor":"1",
+    "Attacks":"None",
+    "Card Text":"Main Phase Reaction: Add 1 cache to your pool (?)"
+  },
+  {
+    "Card Name":"Bugbear Bruiser",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":3,
+    "Armor":"3",
+    "Attacks":"3@1 1@2",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Goblin Plunderer",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":2,
+    "Armor":"1",
+    "Attacks":"0@1 0@2",
+    "Card Text":"Main Phase Reaction: Add 1 cache to your pool (?)"
+  },
+  {
+    "Card Name":"Cave Troll",
+    "Card Type":"Unit",
+    "Subtypes":"Troll",
+    "Cache Cost":5,
+    "Armor":"5",
+    "Attacks":"4@1 2@2",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Hobgoblin Sniper",
+    "Card Type":"Unit",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":4,
+    "Armor":"2",
+    "Attacks":"3@2 2@3",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Gold Mine",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"All players get +2 Cache during their Upkeep (Income phase?)"
+  },
+  {
+    "Card Name":"Unruly Mob",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"If this row is the front line, units get +1 to all attacks. Otherwise, units get -1 to armor"
+  },
+  {
+    "Card Name":"Reinforced Bulwark",
+    "Card Type":"Terrain",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Goblinoid units in this row gain +3 armor and can't attack"
+  },
+  {
+    "Card Name":"Murky Swamp",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":2,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"When a unit moves into this row, it does not untap during its next untap step (ready phase?)"
+  },
+  {
+    "Card Name":"Battle Royale",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":6,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Units in this row cannot block. At the beginning of each player's upkeep (income phase?) that player gains 1 point if they control more units than their opponent"
+  },
+  {
+    "Card Name":"Vigilant Watch",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":4,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Units in this row can block when they are tapped (expended? used? recovering?)"
+  },
+  {
+    "Card Name":"Dirty Tricks",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Any Phase Reaction: Units your opponents control get -2 armor until the end of turn. Your opponent gains 2 points"
+  },
+  {
+    "Card Name":"Martyrdom",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":4,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Main Phase: Sacrifice a unit. You gain points equal to its Cache Cost"
+  },
+  {
+    "Card Name":"Tiki-Tiki Battle Cry",
+    "Card Type":"Strategy",
+    "Subtypes":"Goblinoid",
+    "Cache Cost":4,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Any Phase: Goblinoid units get +2 to all attacks until the end of turn. If any goblinoid creature attacks this turn, sacrifice it at the end of combat"
+  },
+  {
+    "Card Name":"Call For Reinforcements",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Main Phase: Draw a card. If that card is a unit, you may put it onto the battlefield. If you do, your opponent gains points equal to its cache cost."
+  },
+  {
+    "Card Name":"Don't Shoot the Messenger",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Combat Phase Reaction: Until the end of turn, target attacking unit's damage (attack? strength?) is reduced to 0 and that unit cannot be blocked."
+  },
+  {
+    "Card Name":"War Reparations",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":2,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Any Phase Reaction: Until the end of turn, you gain 1 cache for each point your opponent gains"
+  }
+]

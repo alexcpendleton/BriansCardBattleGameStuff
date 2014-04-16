@@ -1,0 +1,18 @@
+﻿.label { color: #000;}
+
+.singleCard {
+    border: solid 1px #000;
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 0 5px 5px 0;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.cardName { font-weight: bold;display: block;text-align: center;margin: 5px 0;}
+.cardType { font-style: italic;display: block;text-align: center;margin: 5px 0;}
+.cacheCost { display: block;}
+.armor { display: block;}
+.attacks { display: block;}
+.cardText { margin: 5px 0;display: block;}
