@@ -214,5 +214,222 @@
     "Armor":"N/A",
     "Attacks":"N/A",
     "Card Text":"Any Phase Reaction: Until the end of turn, you gain 1 cache for each point your opponent gains"
+  },
+  
+  {
+    "Card Name":"Elven Bowyer",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":1,
+    "Armor":"1",
+    "Attacks":"None",
+    "Card Text":"Tap (during your main or second main phase) to add 1 cache to your (pool)."
+  },
+  {
+    "Card Name":"Elven Fighter",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":2,
+    "Armor":"2",
+    "Attacks":"2@1",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Elven Archer",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":2,
+    "Armor":"2",
+    "Attacks":"2@2",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Elven Initiate",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":2,
+    "Armor":"2",
+    "Attacks":"0@3",
+    "Card Text":"Tap (during your main or second main phase) to add 1 cache to your (pool)."
+  },
+  {
+    "Card Name":"Elven Ranger",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":3,
+    "Armor":"3",
+    "Attacks":"2@1, 1@2",
+    "Card Text":""
+  },
+  {
+    "Card Name":"Elven Druid",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":3,
+    "Armor":"2",
+    "Attacks":"1@2, 1@3",
+    "Card Text":"Tap (during your main or second main phase) to add 1 cache to your (pool)."
+  },
+  {
+    "Card Name":"Elven Geomancer",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":3,
+    "Armor":"1",
+    "Attacks":"1@3",
+    "Card Text":"Combat reaction: tap to give all elf units on the field +1 armor until end of turn "
+  },
+  {
+    "Card Name":"Elven Legion",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":4,
+    "Armor":"5",
+    "Attacks":"None",
+    "Card Text":"This unit can block for units in rows behind it. "
+  },
+  {
+    "Card Name":"High Elf Ranger",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":5,
+    "Armor":"5",
+    "Attacks":"3@1, 2@2",
+    "Card Text":""
+  },
+  {
+    "Card Name":"High Elf Fighter",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":5,
+    "Armor":"5",
+    "Attacks":"5@1",
+    "Card Text":""
+  },
+  {
+    "Card Name":"High Elf Archer",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":5,
+    "Armor":"5",
+    "Attacks":"5@2",
+    "Card Text":""
+  },
+  {
+    "Card Name":"High Elf General",
+    "Card Type":"Unit",
+    "Subtypes":"Elf",
+    "Cache Cost":6,
+    "Armor":"6",
+    "Attacks":"None",
+    "Card Text":"Combat reaction: tap to give all elves in this row +2 to their attack until end of turn"
+  },
+  {
+    "Card Name":"Murky Swamp",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":2,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"When a unit moves into this row, it does not untap during its next untap step (ready phase?)"
+  },
+  {
+    "Card Name":"Flame-Tipped Arrows",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":2,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"All units in this row gain +1 to attacks with range 2 only"
+  },
+  {
+    "Card Name":"Cover",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":2,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"All units in this row gain +1 Armor vs attacks with range 2 or 3 only"
+  },
+  {
+    "Card Name":"Verdant Forest",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"All players gain +1 cache (during their upkeep) for each unit in this row"
+  },
+  {
+    "Card Name":"Vigilant Watch",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":4,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Units in this row can block when they are tapped (expended? used? recovering?)"
+  },
+  {
+    "Card Name":"Camouflage",
+    "Card Type":"Terrain",
+    "Subtypes":"",
+    "Cache Cost":5,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Units in this row cannot be targeted by attacks"
+  },
+  {
+    "Card Name":"War Reparations",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":2,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Any Phase Reaction: Until the end of turn, you gain 1 cache for each point your opponent gains"
+  },
+  {
+    "Card Name":"Call For Reinforcements",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Main Phase: Draw a card. If that card is a unit, you may put it onto the battlefield. If you do, your opponent gains points equal to its cache cost."
+  },
+  {
+    "Card Name":"Don't Shoot the Messenger",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Combat Phase Reaction: Until the end of turn, target attacking unit's damage (attack? strength?) is reduced to 0 and that unit cannot be blocked."
+  },
+  {
+    "Card Name":"Trigger Happy Sharpshooters",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":3,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Main Phase: look at the top card of your opponent's deck. If that card is a unit you may put it directly into their graveyard. If you do, your opponent gains points equal to its cache cost. Otherwise, place the card back on top of your opponent's deck. "
+  },
+  {
+    "Card Name":"Geronimo",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":5,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Main phase: units may move forward without tapping until the end of the turn. Units moved this way gain +1 to attacks and -1 to armor until the beginning of your next turn.  "
+  },
+  {
+    "Card Name":"Expeditious Retreat",
+    "Card Type":"Strategy",
+    "Subtypes":"",
+    "Cache Cost":5,
+    "Armor":"N/A",
+    "Attacks":"N/A",
+    "Card Text":"Main phase: units may move backward without tapping until the end of the turn. Units moved this way gain -1 to attacks and +1 to armor until the beginning of your next turn."
   }
 ]

@@ -59,7 +59,7 @@ namespace BriansCardBattleGame.Web
             //    appId: "",
             //    appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication();
         }
     }
 }

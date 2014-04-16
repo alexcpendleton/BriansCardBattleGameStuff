@@ -19,11 +19,11 @@
                 <span class="cardName"><span data-bind="text:$data['Card Name']"></span></span>
                 <span class="cardType">
                     <span data-bind="text:$data['Card Type']"></span>
-                    <span class="subTypes">(<span data-bind="text:$data['Subtypes']"></span>)</span>
+                    <span class="subTypes" data-bind="visible:hasSubtypes">(<span data-bind="text:$data['Subtypes']"></span>)</span>
                 </span>
                 <span class="cacheCost"><strong>Cache Cost:</strong> <span data-bind="text:$data['Cache Cost']"></span></span>
-                <span class="armor"><strong>Armor:</strong> <span data-bind="text:$data['Armor']"></span></span>
-                <span class="attacks"><strong>Attacks:</strong> <span data-bind="text:$data['Attacks']"></span></span>
+                <span class="armor" data-bind="visible:hasArmor"><strong>Armor:</strong> <span data-bind="text:$data['Armor']"></span></span>
+                <span class="attacks" data-bind="visible:hasAttacks"><strong>Attacks:</strong> <span data-bind="text:$data['Attacks']"></span></span>
                 <span class="cardText"><span data-bind="text:$data['Card Text']"></span></span>
             </div>
         </div>
@@ -37,7 +37,19 @@
             $.getJSON("/Card/", {}, function(d) {
                 var cardData = d;
                 var viewModel = {};
-                viewModel.cards = cardData;
+                viewModel.cards = [];
+                for (var i = 0; i < cardData.length; i++) {
+                    var vm = cardData[i];
+                    var copies = 4; // If you add a Copies column to your spreadsheet change this to: var copies = vm.Copies;
+                    vm.hasSubtypes = vm.Subtypes.length > 0;
+                    vm.hasAttacks = vm.Attacks && vm.Attacks != "N/A";
+                    vm.hasArmor = vm.Armor && vm.Armor != "N/A";
+                    for (var j = 0; j < copies; j++) {
+                        var copy = {};
+                        copy = $.extend(copy, vm);
+                        viewModel.cards.push(copy);
+                    }
+                }
                 ko.applyBindings(viewModel);
             });
         });

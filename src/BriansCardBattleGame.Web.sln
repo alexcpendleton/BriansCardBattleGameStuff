@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BriansCardBattleGame.Web", "BriansCardBattleGame.Web\BriansCardBattleGame.Web.csproj", "{BEF0B2CA-8D8C-4F98-8CFB-41713175E0AC}"
 EndProject
 Global
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 48ec5d8d-99de-471e-9411-b53a55f5e872
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
