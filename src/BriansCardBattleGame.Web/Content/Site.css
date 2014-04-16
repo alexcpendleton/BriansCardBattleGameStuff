@@ -1,5 +1,10 @@
 ﻿.label { color: #000;}
-
+/*238x332.5 alleged Magic card size*/
+/*  
+    (2.5 x 3.5)  
+    width: 2.25in;
+    height: 3.25in;
+*/
 .singleCard {
     border: solid 1px #000;
     width: 150px;
