@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>My ASP.NET Application</title>
+    <title>BCBG Card Sheet Builder</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     @Styles.Render("~/Content/css")
@@ -31,9 +31,66 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/Scripts/google-spreadsheet.js")
     
     <script type="text/javascript">
+        var gSpread;
         $(function () {
+            var settings = {
+                google: {
+                    uri: "https://accounts.google.com/o/oauth2/auth",
+                    params: {
+                        response_type: "token",
+                        client_id: "826572608272-mhgo6v02peprtclqvub2qj3gqg7a37lj.apps.googleusercontent.com",
+                        redirect_uri: "http://localhost:8544/Home/Index?oauth2callback",
+                        scope: "https://spreadsheets.google.com/feeds/",
+                        state: "",
+                        approval_prompt: "auto",
+                        login_hint: "alexcpendleton@gmail.com",
+                        include_granted_scopes: false
+                    },
+                    oauthToken: "",
+                    spreadsheet: {
+                        id: "0AmOf8KMgEKLzdFlrTmppNW5rOV92aFdlUzBZdkVsZnc"
+                    }
+                },
+            };
+            
+            
+            var urlparams = {}, queryString = location.hash.substring(1),
+                regex = /([^&=]+)=([^&]*)/g, m;
+            while (m = regex.exec(queryString)) {
+                urlparams[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+            }
+
+            function authenticateWithGoogle() {
+                var googleOauthFullUri = settings.google.uri + "?" + $.param(settings.google.params);
+                window.location = settings.google.uri + "?" + $.param(settings.google.params);
+            }
+
+            window.authenticateWithGoogle = authenticateWithGoogle;
+
+            function spreadsheetLoadCallback(results) {
+                console.log("spreadsheetLoadCallback:", results, JSON.stringify(results));
+            }
+
+            window.oauth2callback = function() {
+                var accessToken = urlparams["access_token"];
+                settings.google.oauthToken = accessToken;
+                console.log(accessToken);
+                gSpread = new GoogleSpreadsheet(accessToken);
+                var gUrl = "https://spreadsheets.google.com/feeds/default/full/0AmOf8KMgEKLzdFlrTmppNW5rOV92aFdlUzBZdkVsZnc/od6/private/values&access_token=" + accessToken;
+                gUrl = "https://spreadsheets.google.com/feeds/list/0AmOf8KMgEKLzdFlrTmppNW5rOV92aFdlUzBZdkVsZnc/od6/private/basic&access_token=" + accessToken;
+                gSpread.url(gUrl);
+                console.log("gUrl: ", gUrl);
+                gSpread.load(spreadsheetLoadCallback);
+                console.log("post load gSpread");
+            };
+
+            if (window.location.href.indexOf("#access_token") > -1) {
+                window.oauth2callback();
+            }
+
             $.getJSON("/Card/", {}, function(d) {
                 var cardData = d;
                 var viewModel = {};

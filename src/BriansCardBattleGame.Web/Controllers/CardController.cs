@@ -12,7 +12,7 @@ namespace BriansCardBattleGame.Web.Controllers
         // GET: /Card/
         public ActionResult Index()
         {
-            var x = File("~/CardData.json", "application/json");
+            var x = File("~/CardData.json", "application/json");            
             return x;
         }
     }
